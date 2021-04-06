@@ -100,6 +100,7 @@ def validation():
     1. We load the model from the pickle file.
     2. We load the tests from the .csv files.
     4. Save the predictions in .csv and in the POSTGRESQL database.
+    5. We print metric values.
     """
     os.chdir("/opt/airflow")
     engine = create_engine('postgresql://postgres:contrasinal@192.168.0.1:5432/test');

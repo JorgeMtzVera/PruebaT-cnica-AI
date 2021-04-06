@@ -18,7 +18,6 @@ import numpy as np
 import json
 import os
 
-#Import connection package to POSTGRESQL
 from sqlalchemy import create_engine
 
 #Default arguments of the DAG

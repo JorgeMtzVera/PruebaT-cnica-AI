@@ -3,17 +3,14 @@ Third try DAG
 """
 from datetime import timedelta
 
-#Import Airflow libraries
 import airflow
 from airflow import DAG
 from airflow.operators.bash_operator import BashOperator
 from airflow.operators.python_operator import PythonOperator
 
-#Import Sklearn libraries
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 
-#Import other general libraries
 import pickle
 import pandas as pd
 import matplotlib.pyplot as plt
